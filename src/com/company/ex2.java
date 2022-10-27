@@ -6,9 +6,9 @@ public class ex2 {
         int[] arr = {1, 2, 5, 10, 20, 50};
         int[] moneyCount = {0, 0, 0, 0, 0, 0};
         int summ = 0;
-        int money = 74; // - сумма сдачи
+        int money = 76; // - сумма сдачи
         while (money > 0) {
-            for (int i = 5; i + 1 > args.length; ) {
+            for (int i = arr.length-1; i >= 0; ) {
                 if (money - arr[i] >= 0) {
                     money -= arr[i];
                     summ += arr[i];
